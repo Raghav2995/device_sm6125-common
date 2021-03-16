@@ -123,8 +123,10 @@ BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/firmware_mnt:/firmware \
-    /vendor/bt_firmware:/bt_firmware
+   /mnt/vendor/persist::/persist \
+   /vendor/bt_firmware:/bt_firmware \
+   /vendor/dsp:/dsp \
+   /vendor/firmware_mnt::/firmware
 
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_EXT4 := true
